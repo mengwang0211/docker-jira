@@ -5,10 +5,10 @@ services:
       links:
         - jira_sql
       ports:
-        - "85:80"
+        - "80:80"
     jira_sql:
       image: hzwangmeng/jira_sql:1.0
       ports:
-          - "3307:3306"
+          - "3309:3306"
       environment:
         - MYSQL_ROOT_PASSWORD=123456
