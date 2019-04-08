@@ -5,7 +5,7 @@ services:
       links:
         - jira_sql
       ports:
-        - "80:80"
+        - "80:8080"
     jira_sql:
       image: hzwangmeng/jira_sql:1.0
       ports:
